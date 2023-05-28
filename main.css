@@ -1,0 +1,113 @@
+@import "colors.css";
+@import "fonts.css";
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: openSansBold, serif;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.f_history {
+    padding-right: 13px;
+    padding-left: 13px;
+    padding-top: 13px;
+}
+.f_history__time {
+    display: flex;
+    align-items: center;
+    padding: 10px 9px;
+    background: var(--v-light-gray);
+    border-radius: 3px;
+}
+.f_history__totals {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-right: 55px;
+}
+.f-history__title {
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 10px;
+    color: var(--dark-blue);
+}
+.f-history__time {
+    font-size: 0.875rem;
+    line-height: 1;
+    color: var(--dark-gray);
+}
+.right--line {
+    border-right: 2px solid var(--light-gray);
+}
+.pl-14 {
+    padding-left: 14px;
+}
+.f_history__info {
+    display: flex;
+    padding: 18px 15px;
+    transition: .3s all ease-in;
+}
+.f_history__info.f_play .f_history__pause{
+    display: none;
+}
+.f_history__info.f_pause .f_history__play{
+    display: none;
+}
+.f_history__info.f_pause .f_history__pause{
+    display: block;
+}
+.f_history__info.f_play .f_history__info-left, .f_history__info-time{
+    color: var(--green);
+}
+
+.f_history__info.f_pause .f_history__info-left, .f_history__info-time.text--orange{
+    color: var(--orange) ;
+}
+
+.f_history__info:hover {
+    background: var(--v-light-gray);
+}
+.f_history__info-left {
+    position: relative;
+    font-size: 0.75rem;
+    line-height: 1;
+    padding-right: 17px;
+}
+.f_history__play, .f_history__pause {
+    position: absolute;
+    top: 1px;
+    right: -6px;
+}
+.f_history__info-left:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    right: -1px;
+    width: 1px;
+    height: 68px;
+    background: var(--light-gray);
+}
+.f_history__info:last-child .f_history__info-left:before {
+    height: 100% !important
+}
+.f_history__info-right {
+    padding-left: 17px;
+}
+.f_history__info-time {
+    line-height: 1;
+    font-size: 0.875rem;
+    margin-bottom: 6px;
+}
+.f_history__info-loc {
+    font-size: 0.75rem;
+    line-height: 1;
+    color: var(--dark-gray);
+}
+.f_history__arrow-r {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: none;
+}
+.f_history__info-loc.f-loc--two .f_history__arrow-r{
+    display: inline-block;
+}

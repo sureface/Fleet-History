@@ -71,7 +71,9 @@
     position: relative;
     font-size: 0.75rem;
     line-height: 1;
-    padding-right: 17px;
+    padding-right: 6px;
+    flex-shrink: 0;
+    width: 70px;
 }
 .f_history__play, .f_history__pause {
     position: absolute;
@@ -84,7 +86,7 @@
     top: 2px;
     right: -1px;
     width: 1px;
-    height: 68px;
+    height: 217%;
     background: var(--light-gray);
 }
 .f_history__info:last-child .f_history__info-left:before {
